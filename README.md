@@ -1,3 +1,13 @@
+NOTE:
+- Do not install this because you are looking for a good hashline edit tool, it is not 100% working, just a reference implementation.
+  
+- Use https://github.com/YuGiMob/pi-hashline-edit-pro if you want an actual working one, this is just hard slopfork of multiple repos that I iterated on too much
+
+
+Everything else below is also pure slop.
+
+----------------------------------------------------
+
 # pi-hashlinetools
 
 A [pi-coding-agent](https://github.com/earendil-works/pi-coding-agent) extension that **replaces the built-in `read`, `edit`, `write`, and `undo` tools** with a hash-anchored, line-endpoint-reference workflow.
