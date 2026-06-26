@@ -1,0 +1,1 @@
+Edit a text file. One call per file. Ops: `replace_text` (`oldText` + `newText`), `append`/`prepend` (`pos` + `lines`), `replace` (default; `range` + `lines`). Multi-edit returns fresh post-edit anchors for chaining.

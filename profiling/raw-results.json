@@ -1,0 +1,227 @@
+{
+  "meta": {
+    "baseline": {
+      "collisionRate": 0.00390625,
+      "chiSquared": 255,
+      "throughputMBps": 100
+    },
+    "lines": 37012,
+    "files": 160,
+    "extensions": [".cs", ".patch", ".py", ".ts", ".rs", ".md"],
+    "durationSec": 60,
+    "presets": [
+      {
+        "name": "quality-only",
+        "weights": {
+          "collision": 0.6666666666666667,
+          "distribution": 0.3333333333333333,
+          "throughput": 0
+        }
+      },
+      {
+        "name": "quality-first",
+        "weights": {
+          "collision": 0.5333333333333334,
+          "distribution": 0.26666666666666666,
+          "throughput": 0.2
+        }
+      },
+      {
+        "name": "balanced",
+        "weights": {
+          "collision": 0.4666666666666667,
+          "distribution": 0.2333333333333333,
+          "throughput": 0.3
+        }
+      }
+    ]
+  },
+  "results": [
+    {
+      "candidate": "xxhashjs",
+      "variant": "mask",
+      "throughputMBps": 30.387799722290445,
+      "latencyMedianUs": 1.1,
+      "latencyP99Us": 3.4,
+      "chiSquared": 198.20728412406774,
+      "outlierBuckets": 1,
+      "collisionRate5": 0.00403,
+      "totalCollisions5": 403,
+      "worstWindow5": 3,
+      "seedSensitivity": false
+    },
+    {
+      "candidate": "fnv1a",
+      "variant": "mask",
+      "throughputMBps": 363.5785466868149,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.5,
+      "chiSquared": 259.6550308008211,
+      "outlierBuckets": 0,
+      "collisionRate5": 0.00361,
+      "totalCollisions5": 361,
+      "worstWindow5": 3,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "fnv1a",
+      "variant": "fold",
+      "throughputMBps": 359.7916057655824,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.5,
+      "chiSquared": 232.07132821787522,
+      "outlierBuckets": 0,
+      "collisionRate5": 0.00383,
+      "totalCollisions5": 383,
+      "worstWindow5": 3,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "djb2",
+      "variant": "mask",
+      "throughputMBps": 358.9678942663714,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.5,
+      "chiSquared": 250.08235166972887,
+      "outlierBuckets": 0,
+      "collisionRate5": 0.00393,
+      "totalCollisions5": 393,
+      "worstWindow5": 3,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "djb2",
+      "variant": "fold",
+      "throughputMBps": 373.5539137659461,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.4,
+      "chiSquared": 272.8935480384739,
+      "outlierBuckets": 0,
+      "collisionRate5": 0.00356,
+      "totalCollisions5": 356,
+      "worstWindow5": 3,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "pearson",
+      "variant": "native",
+      "throughputMBps": 85.14966418974635,
+      "latencyMedianUs": 0.4,
+      "latencyP99Us": 1.1,
+      "chiSquared": 237.99200259375343,
+      "outlierBuckets": 0,
+      "collisionRate5": 0.00357,
+      "totalCollisions5": 357,
+      "worstWindow5": 2,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "hash8",
+      "variant": "r1",
+      "throughputMBps": 356.02420415054235,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.5,
+      "chiSquared": 625.5748405922405,
+      "outlierBuckets": 4,
+      "collisionRate5": 0.00371,
+      "totalCollisions5": 371,
+      "worstWindow5": 3,
+      "seedSensitivity": true
+    },
+    {
+      "candidate": "hash8",
+      "variant": "r2",
+      "throughputMBps": 302.7360950055177,
+      "latencyMedianUs": 0.1,
+      "latencyP99Us": 0.6,
+      "chiSquared": 261.4810331784287,
+      "outlierBuckets": 1,
+      "collisionRate5": 0.00367,
+      "totalCollisions5": 367,
+      "worstWindow5": 3,
+      "seedSensitivity": false
+    }
+  ],
+  "normalized": [
+    {
+      "candidate": "xxhashjs",
+      "variant": "mask",
+      "throughput": 0.30387799722290443,
+      "distribution": 1.2865319310887833,
+      "collision": 0.9692928039702234,
+      "qualityOnly": 1.07503917967641,
+      "qualityFirst": 0.9208069431857091,
+      "balanced": 0.8436908249403584
+    },
+    {
+      "candidate": "fnv1a",
+      "variant": "mask",
+      "throughput": 3.635785466868149,
+      "distribution": 0.982072248758423,
+      "collision": 1.0820637119113574,
+      "qualityOnly": 1.0487332241937128,
+      "qualityFirst": 1.5661436727286,
+      "balanced": 1.8248488969960435
+    },
+    {
+      "candidate": "fnv1a",
+      "variant": "fold",
+      "throughput": 3.5979160576558242,
+      "distribution": 1.0988001058045338,
+      "collision": 1.0199086161879896,
+      "qualityOnly": 1.0462057793935045,
+      "qualityFirst": 1.5565478350459685,
+      "balanced": 1.8117188628722003
+    },
+    {
+      "candidate": "djb2",
+      "variant": "mask",
+      "throughput": 3.589678942663714,
+      "distribution": 1.0196641158299953,
+      "collision": 0.9939567430025444,
+      "qualityOnly": 1.0025258672783615,
+      "qualityFirst": 1.5199564823554321,
+      "balanced": 1.778671789893967
+    },
+    {
+      "candidate": "djb2",
+      "variant": "fold",
+      "throughput": 3.735539137659461,
+      "distribution": 0.9344303001405105,
+      "collision": 1.0972612359550562,
+      "qualityOnly": 1.0429842573502077,
+      "qualityFirst": 1.5814952334120584,
+      "balanced": 1.8507507214429835
+    },
+    {
+      "candidate": "pearson",
+      "variant": "native",
+      "throughput": 0.8514966418974634,
+      "distribution": 1.0714645753675966,
+      "collision": 1.0941876750700281,
+      "qualityOnly": 1.0866133085025511,
+      "qualityFirst": 1.0395899751815336,
+      "balanced": 1.0160783085210245
+    },
+    {
+      "candidate": "hash8",
+      "variant": "r1",
+      "throughput": 3.5602420415054237,
+      "distribution": 0.4076250888839901,
+      "collision": 1.0528975741239892,
+      "qualityOnly": 0.8378067457106563,
+      "qualityFirst": 1.3822938048696098,
+      "balanced": 1.6545373344490866
+    },
+    {
+      "candidate": "hash8",
+      "variant": "r2",
+      "throughput": 3.027360950055177,
+      "distribution": 0.9752141365679622,
+      "collision": 1.0643732970027249,
+      "qualityOnly": 1.034653576857804,
+      "qualityFirst": 1.4331950514972789,
+      "balanced": 1.6324657888170158
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "pi-hashline-edit-profiling",
+  "version": "0.1.0",
+  "type": "module",
+  "dependencies": {
+    "xxhashjs": "^0.2.2"
+  },
+  "devDependencies": {
+    "vitest": "^3.0.0"
+  },
+  "scripts": {
+    "test": "vitest run"
+  }
+}

@@ -1,0 +1,2 @@
+- Use read before edit when you do not have current checked line refs like `128qw7│    return value` for the file.
+- If read is truncated, continue with the `offset` it suggests — do not guess unseen lines.
